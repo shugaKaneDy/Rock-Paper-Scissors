@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sigmar+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="styles/rock-paper-scissors.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+</head>
+<body>
+  <div class="">
+    <div class="header">
+      <p class="logo"><span class="ig">IG</span><span class="rest-logo">ames</span></p>
+      <div class="middle">
+        <span class="material-symbols-outlined white">
+          account_circle
+        </span>
+        <p class="middle-text">
+          Hello, User1
+        </p>
+      </div>
+      <div class="right">
+        <p class="right-text">More Games and Apps</p>
+        <span class="material-symbols-outlined">
+          more_horiz
+        </span>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="title">Rock Paper Scissors</p>
+
+      <div class="pick">
+        <p class="pick-text">pick: </p>
+        <div>
+          <button class="pick-button js-rock-button"><img src="images/Rock-no-bg.png" alt=""></button>
+          <p class="pick-button-text">Rock</p>
+        </div>
+        <div>
+          <button class="pick-button js-paper-button"><img src="images/Paper-no-bg.png" alt=""></button>
+          <p class="pick-button-text">Paper</p>
+        </div>
+        <div>
+          <button class="pick-button js-scissors-button"><img src="images/Scissors-no-bg.png" alt=""></button>
+          <p class="pick-button-text">Scissors</p>
+        </div>
+      </div>
+
+      <div class="match">
+        <div class="game-match js-game-match">
+          <p class="ready">Ready</p>
+          <!-- <div class="you">
+            <p class="game-match-text">You.</p>
+            <div class="with-animation">
+              <img class="match-img you-img js-win-image" src="images/Paper-no-bg.png" alt="">
+            </div>
+            <p class="normal-text">Paper</p>
+          </div>
+          <p class="result">You Win.</p>
+          <div class="computer">
+            <p class="game-match-text">Computer.</p>
+            <img class="match-img computer-img js-lose-image" src="images/Rock-no-bg.png" alt="">
+            <p class="normal-text">Rock</p>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="score">
+        <div class="wins">
+          <p class="wins-title">Wins</p>
+          <p class="js-wins-score">0</p>
+        </div>
+        <div class="losses">
+          <p class="losses-title">Losses</p>
+          <p class="js-losses-score">0</p>
+        </div>
+        <div class="ties">
+          <p class="ties-title">Ties</p>
+          <p class="js-ties-score">0</p>
+        </div>
+      </div>
+
+      <div class="last-button">
+        <button class="reset-button js-reset-button">Reset Score</button>
+        <button class="auto-play-button js-auto-play-button">Auto Play</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/rock-paper-scissors.js"></script>
+</body>
+</html>
