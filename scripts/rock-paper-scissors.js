@@ -147,6 +147,9 @@ document.querySelector('.js-reset-button')
 
     localStorage.removeItem('myScore');
     updateScoreElement();
+
+    document.querySelector('.js-game-match')
+      .innerHTML = `<p class="ready">Ready</p>`;
   });
 
 document.querySelector('.js-auto-play-button')
